@@ -63,11 +63,11 @@ script:
   - ./scripts/run-junit.sh skipClean
   - ./scripts/run-agent-test.sh skipClean
   #  open jdk 10
-  - switch_to_open_jdk10
+  - jdk_switcher use openjdk10
   - ./scripts/run-junit.sh skipClean
   - ./scripts/run-agent-test.sh skipClean
   #  open jdk 11
-  - switch_to_open_jdk11
+  - jdk_switcher use openjdk11
   - ./scripts/run-junit.sh skipClean
   - ./scripts/run-agent-test.sh skipClean
   #  open jdk 12
